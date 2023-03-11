@@ -1,0 +1,87 @@
+@import '../../../sass/config.scss';
+.movies{
+
+    background-image: url('./images/top-rated-bg.jpg');
+    background-position: center;
+    background-size: cover;
+
+    .container{
+        padding-top: 30px;
+        .top{
+            text-align: center;
+            label{
+                color: $yellow;
+                font-size: 12px;
+            }
+            h2{
+                color: $white;
+                font-size: 40px;
+                margin-bottom: 20px;
+            }
+        }
+
+        .row{
+            @include flex(center,center);
+            align-items: center;
+            text-align: center;
+            margin-bottom: 30px;
+
+            .item-desc{
+                margin-left: 20px;
+                border: 2px solid #000;
+                padding: 10px 20px;
+                background-color: #0a0f0f;
+                color: $white;
+                border-radius: 10px;
+                font-size: 12px;
+            }
+
+        }
+
+        .row-movies{
+            @include grid(4);
+            img{
+                width: 100%;
+                border-radius: 10px;
+            }
+            .title{
+                margin-top: 10px;
+                @include flex(space-between,center);
+                h4{
+                    color: $white;
+                }
+                .yellow{
+                    color: $yellow;
+                }
+            }
+            .footer{
+                margin-top: 10px;
+                margin-bottom: 20px;
+                @include flex(space-between,center);
+
+                .hd{
+                    color: $yellow;
+                    padding: 3px 7px;
+                    background-color: #110f1a;
+                    border: 2px solid $white;
+                    font-size: 12px;
+                }
+                i{
+                    color: $yellow;
+                    margin-right: 5px;
+                }
+
+                .info{
+                    label{
+                        margin-left: 10px;
+                        color: $white;
+                        font-size: 13px;
+                    }
+                }
+
+            }
+        }
+
+    }
+
+}

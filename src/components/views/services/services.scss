@@ -1,0 +1,61 @@
+@import '../../../sass/config.scss';
+
+.services{
+
+    height: 100vh;
+    width: 100%;
+    background-image: url('./images/service-bg.jpg');
+    background-position: center;
+    background-size: cover;
+
+    .container{
+        padding: 50px 0;
+
+        .row{
+            @include flex(space-between,right);
+            label{
+                color:$white;
+                font-size: 15px;
+            }
+            h2{
+                font-size: 35px;
+                width: 70%;
+                margin: 10px 0;
+                color: $white;
+            }
+            p{
+                color: $gray;
+                font-size: 15px;
+                width: 90%;
+                margin-bottom: 10px;
+            }
+            .item{
+                @include flex(space-between,center);
+                margin-top: 20px;
+                i{
+
+                    width: 110px;
+                    line-height: 110px;
+                    border-radius: 50%;
+                    text-align: center;
+                    font-size: 50px;
+                    margin-right: 20px;
+                    border-style:dashed;
+                    border: 1px dashed  $yellow;
+                    color: $white;
+                }
+
+                h4{
+                    color: $white;
+                    font-size: 20px;
+                    margin-bottom: 10px;
+                }
+
+            }
+            .right{
+                margin-left: 60px;
+            }
+        }
+
+    }
+}

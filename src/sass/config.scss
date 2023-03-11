@@ -1,0 +1,33 @@
+$yellow:#e2d703;
+$black:#161d25;
+$white:#ffffff;
+$gray:#a0a0a1;
+
+
+@mixin flex($justify-content,$align-items){
+    display: flex;
+    justify-content: $justify-content;
+    align-items: $align-items;
+}
+@mixin grid($num){
+    display: grid;
+    grid-template-columns: repeat($num,1fr);
+    grid-gap: 30px;
+
+}
+a{
+    text-decoration: none;
+   
+}
+li{
+    list-style: none;
+}
+@mixin button($padding,$font-size,$border-radius){
+    color: #fff;
+    padding: $padding;
+    font-size: $font-size;
+    border-radius:$border-radius ;
+    border: 1px solid $yellow;
+    cursor: pointer;
+    transition: .2s ease;
+}

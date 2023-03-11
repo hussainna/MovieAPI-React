@@ -1,0 +1,118 @@
+@import '../../sass/config.scss';
+header{
+    .container{
+        padding-top: 20px;
+        @include flex(space-between,center);
+    }
+    img{
+        width: 80%
+    }
+    .forms{
+        @include flex(space-between,center);
+    }
+    ul{
+        @include flex(space-between,center);
+    }
+    a{
+        font-size: 15px;
+        margin-left: 20px;
+        color: #fff;
+        transition: .2s ease;
+        &:hover{
+            color: $yellow;
+        }
+    }
+    .forms{
+        i{
+            color: #fff;
+        }
+        .language{
+            margin: 0px 20px;
+        }
+        .fa-magnifying-glass{
+            padding-right: 10px;
+            border-right: 1px solid #3b3b3b;
+        }
+        label{
+            font-size: 15px;
+            font-weight: 700;
+            color: #fff;
+        }
+        .fa-globe{
+            color: $yellow;
+            margin-right: 10px;
+        }
+    }
+
+    button{
+        @include button(10px 30px,16px,30px);
+        background-color: #101519;
+        font-weight: 900;
+        &:hover{
+            background-color: $yellow;
+            color: black;
+        }
+    }
+}
+
+footer{
+    background-image: url('./images/footer-bg.jpg');
+    height: 40vh;
+    .container{
+        padding: 50px 20px;
+    }
+    .top{
+        @include flex(space-between,center);
+        margin-bottom: 20px;
+    }
+    ul{
+        @include flex(space-between,center);
+
+    }
+
+    .logo{
+        color: $white;
+        font-size: 30px;
+    }
+    a{
+        color: rgb(173, 173, 173);
+        margin-left: 20px;
+        transition: .2s ease;
+        &:hover{
+            color: $yellow;
+        }
+    }
+    .middle{
+        border: 1px solid #293036;
+        height: 5px;
+        background-color: #202229;
+        margin-bottom: 40px;
+    }
+    .bottom{
+        @include flex(space-between,center);
+        i{
+            background-color: #0e1118;
+            padding: 10px 13px 10px 13px;
+            border-radius: 50%;
+            color: rgb(173, 173, 173);
+            transition: .2s ease;
+            cursor: pointer;
+            &:hover{
+                color: $yellow;
+            }
+            margin-left: 10px;
+            font-size: 18px;
+        }
+    }
+}
+
+.under{
+    background-color: #171d21;
+    .container{
+        @include flex(space-between,center);
+        padding: 30px 0;
+        span{
+            color: $yellow;
+        }
+    }
+}

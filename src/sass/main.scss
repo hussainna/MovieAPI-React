@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import './config.scss';
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+}
+.container{
+    margin: auto;
+    width: 98%;
+}
+.home{
+    background-image: url('./images/hero-bg.jpg');
+    background-size: cover;
+    background-position: right;
+    min-height: 500px;
+    height: 100vh;
+    align-items: center;
+}

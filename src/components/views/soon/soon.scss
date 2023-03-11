@@ -1,0 +1,71 @@
+@import '../../../sass/config.scss';
+.soon{
+    background-image: url('./images/upcoming-bg.png');
+    height: 110vh;
+    width: 100%;
+    .container{
+        padding-top: 4%;
+        h2{
+            font-size: 30px;
+            color: $white;
+            margin-bottom: 20px;
+        }
+        button{
+            @include button(15px 25px, 12px,50px);
+            background-color: $black;
+            color: $white;
+            font-weight: 600;
+            border: solid 2px #2e303e;
+            margin-left: 10px;
+        }
+        .yellow{
+            color: $yellow;
+        }
+        .top{
+            @include flex(space-between,center);
+        }
+        .row{
+            margin-bottom: 2%;
+            text-align: center;
+            @include grid(4);
+            img{
+                border-radius: 10px;
+                width: 100%;
+                margin-bottom: 20px;
+            }
+           .item{
+            text-align: left;
+            h4{
+                color: $white;
+            }
+            .title label{
+                color: $yellow;
+            }
+            .footer{
+                margin-top: 10px;
+                .hd{
+                    background-color: $black;
+                    border: 1px solid $white;
+                    color: $yellow;
+                    font-size: 10px;
+                    font-weight: 600;
+                    padding: 3px 7px;
+                }
+                .info label{
+                    color: $white;
+                    font-size: 15px;
+                    margin-left: 10px;
+                }
+                i{
+                    color: $yellow;
+                    margin-right: 10px;
+                }
+            }
+           }
+           .title,.footer{
+            @include flex(space-between,center)
+           }
+        }
+
+    }
+}
